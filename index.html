@@ -2,15 +2,47 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <link rel="stylesheet" href="style.css">
   <title>BarunPetWeb</title>
-  <meta name="description" content="A website version for prototyping BarunPet bluetooth communication.">
-
-  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-  <!-- your content here... -->
-  <script src="/script.js"></script>
+  <div class="outer-div">
+    <div class="inner-div">
+      <h1 id="app-name">BarunPet</h1>
+      <div>
+        <button id="connect">Connect to Bluetooth</button>
+      </div>
+      
+      <div class="gait-stability">
+        <h2 id="gait-stability">Gait Stability</h2>
+        <p id="normality">_._._._</p>
+      </div>
+
+      <div class="sensor-data">
+        <div>
+          <h2 id="sensor-data">Sensor Data</h2>
+        </div>
+        <div class="raw-data">
+          <div class="x" id="x-div">
+            <h4 id="x-title">X-axis</h4>
+            <p id="x-data">Null</p>
+          </div>
+          <div class="y" id="y-div">
+            <h4 id="y-title">Y-axis</h4>
+            <p id="y-data">Null</p>
+          </div>
+          <div class="z" id="z-div">
+            <h4 id="z-title">Z-axis</h4>
+            <p id="z-data">Null</p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <script src="app.js"></script>
 </body>
 </html>

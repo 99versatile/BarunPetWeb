@@ -1,0 +1,23 @@
+.outer-div {
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+}
+
+.inner-div {
+    display: inline-block;
+    margin: auto 0;
+}
+
+.raw-data {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: -20px;
+}
+
+#normality {
+    color: blueviolet;
+    font-weight: bold;
+}
