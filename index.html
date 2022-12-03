@@ -4,7 +4,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <title>BarunPetWeb</title>
 </head>
 <body>
@@ -40,7 +42,15 @@
         </div>
 
         <div>
-          <canvas id="GaitStabilityGraph" width="400" height="400"></canvas>
+          <canvas id="Acc" width="400" height="400"></canvas>
+        </div>
+
+        <div>
+          <canvas id="Gyro" width="400" height="400"></canvas>
+        </div>
+
+        <div>
+          <canvas id="RPY" width="400" height="400"></canvas>
         </div>
       </div>
       
@@ -48,7 +58,6 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="chartDesign.js"></script>
-  <script src="app.js"></script>
+  <script type="module" src="./app.js"></script>
 </body>
 </html>
